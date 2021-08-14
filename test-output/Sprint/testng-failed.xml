@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sprint]">
+  <parameter name="Browser" value="firefox"/>
+  <test thread-count="5" name="Sprint-Tests(failed)">
+    <classes>
+      <class name="com.livingtree.tests.LQ4268">
+        <methods>
+          <include name="test_LQ4268" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4268 -->
+      <class name="com.livingtree.tests.LQ4201">
+        <methods>
+          <include name="test_LQ4201" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4201 -->
+      <class name="com.livingtree.tests.LQ4191">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test_LQ4191" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4191 -->
+      <class name="com.livingtree.tests.LQ4327_ScheduleFilePost">
+        <methods>
+          <include name="test_LQ4327ScheduleFilePost" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4327_ScheduleFilePost -->
+      <class name="com.livingtree.tests.LQ5300">
+        <methods>
+          <include name="test_LQ5300" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ5300 -->
+      <class name="com.livingtree.tests.LQ4198">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test_LQ4198" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4198 -->
+      <class name="com.livingtree.tests.LQ4094">
+        <methods>
+          <include name="test_LQ4094" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4094 -->
+      <class name="com.livingtree.tests.LQ2067">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test_LQ2067" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ2067 -->
+      <class name="com.livingtree.tests.LQ4327_ScheduleMessagePost">
+        <methods>
+          <include name="test_LQ4327ScheduleMessagePost" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.livingtree.tests.LQ4327_ScheduleMessagePost -->
+    </classes>
+  </test> <!-- Sprint-Tests(failed) -->
+</suite> <!-- Failed suite [Sprint] -->

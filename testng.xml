@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="LivingTree Suite" >  -->
+ <suite name="LivingTree Suite">
+	<!-- <listeners>
+		<listener class-name="listeners.CustomListener"></listener>
+	</listeners>
+ -->
+	<test name="Test">
+
+		<classes>
+			<class name="suite.runner.CustomSuiteRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

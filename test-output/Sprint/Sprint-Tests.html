@@ -1,0 +1,1161 @@
+<html>
+<head>
+<title>TestNG:  Sprint-Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sprint-Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>79/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 13 23:12:18 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>20335 seconds (20335055 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.livingtree.tests.LQ2067.test_LQ2067()'><b>test_LQ2067</b><br>Test class: com.livingtree.tests.LQ2067<br>Test method: Inviting a Principal to District<br>Parameters: {UserName=grace.martinobrewster@austinisd.org, InviteeName=principalphalert@mailinator.com, groupname=MathewsElementary, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Accept&apos;]&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2aced4ab89802af5416c37ef0f293dd
+*** Element info: {Using=xpath, value=//input[@id=&apos;Accept&apos;]}
+	at com.livingtree.tests.LQ2067.test_LQ2067(LQ2067.java:40)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657767738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657767738'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Accept&apos;]&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2aced4ab89802af5416c37ef0f293dd
+*** Element info: {Using=xpath, value=//input[@id=&apos;Accept&apos;]}
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ2067.test_LQ2067(LQ2067.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>82</td>
+<td>com.livingtree.tests.LQ2067@6db9f5a4</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4094.test_LQ4094()'><b>test_LQ4094</b><br>Test class: com.livingtree.tests.LQ4094<br>Test method: Verify ownership transfer<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=MathewsElementary, Descrpt=my cal event, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Description=my event, Message=LQ-4097 test by Automation, Invite1=Grace Martino-Brewster, subject=LA-11993 LQ-4328, Amount=200, Teacher=grace.martinobrewster@austinisd.org, giveTitle=my campain event, Subject=LQ-4096 test by Automation, PhotoPath=\src\test\resources\Files\Uploads\Images\Deepak1.jpg, location=Bangalore, Userinvite1=adc1106@gmail.com, Subject2=LQ-4095 test by Automation, Subject3=LQ-4094 test by Automation, Invite=Alex Choo, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45c950e57104649ff6da34ac64b420f7
+	at com.livingtree.tests.LQ4094.test_LQ4094(LQ4094.java:60)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809850935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1809850935'><pre>java.lang.AssertionError: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45c950e57104649ff6da34ac64b420f7
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4094.test_LQ4094(LQ4094.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>95</td>
+<td>com.livingtree.tests.LQ4094@623a8092</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4191.test_LQ4191()'><b>test_LQ4191</b><br>Test class: com.livingtree.tests.LQ4191<br>Test method: Verify welcome post in photos/videos filter<br>Parameters: {UserName=chinmoy.saha001@mailinator.com, text=LivingTree Welcome, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@placeholder=&apos;Create a post or share a photo, video or file&apos;] (tried for 120 second(s) with 500 milliseconds interval)
+	at com.livingtree.tests.LQ4191.test_LQ4191(LQ4191.java:32)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1855679311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1855679311'><pre>java.lang.AssertionError: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@placeholder=&apos;Create a post or share a photo, video or file&apos;] (tried for 120 second(s) with 500 milliseconds interval)
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4191.test_LQ4191(LQ4191.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>140</td>
+<td>com.livingtree.tests.LQ4191@3098cf3b</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4198.test_LQ4198()'><b>test_LQ4198</b><br>Test class: com.livingtree.tests.LQ4198<br>Test method: Verify that the lion icon is removed from the auto-translated email notification for an Invitation received.<br>Parameters: {UserName=tleach@asdms.us, studentname=Aaden Pargo, InviteeName=hopeword85@gmail.com, env=maple_auto, groupname=Functional Academics, Subject=Deekap PK Homeroom has invited you to join, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: element click intercepted: Element is not clickable at point (1322, 1127)
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ad5aeac2269d28224a01d48a4fb3da9
+	at com.livingtree.tests.LQ4198.test_LQ4198(LQ4198.java:41)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1199213870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1199213870'><pre>java.lang.AssertionError: element click intercepted: Element is not clickable at point (1322, 1127)
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52714}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ad5aeac2269d28224a01d48a4fb3da9
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4198.test_LQ4198(LQ4198.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>77</td>
+<td>com.livingtree.tests.LQ4198@6a03bcb1</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4201.test_LQ4201()'><b>test_LQ4201</b><br>Test class: com.livingtree.tests.LQ4201<br>Test method: Verify that the invite any one in a group using groupcode<br>Parameters: {GroupCode=0F2E41D533, ChildLastName=Last1, UserName=parent1james@mailinator.com, ChildFirstName=Student1, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c10c307a27265ded43cd5c1de4ca9807
+	at com.livingtree.tests.LQ4201.test_LQ4201(LQ4201.java:32)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1380747352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1380747352'><pre>java.lang.AssertionError: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c10c307a27265ded43cd5c1de4ca9807
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4201.test_LQ4201(LQ4201.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>49</td>
+<td>com.livingtree.tests.LQ4201@21b2e768</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4268.test_LQ4268()'><b>test_LQ4268</b><br>Test class: com.livingtree.tests.LQ4268<br>Test method: Verify that the lion icon is removed from the auto-translated email notification for an Invitation received.<br>Parameters: {UserName=katherine.thomashel@nn.k12.va.us, childname=ridhi saha, InviteeName=chinmoy.saha001@mailinator.com, env=maple, groupname=PK Homeroom, Subject=chinmoy  Homeroom has invited you to join, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#invitee_new_group_name_0&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a3d0d07a1ae7008ccf1d7e45b3667e
+*** Element info: {Using=id, value=invitee_new_group_name_0}
+	at com.livingtree.tests.LQ4268.test_LQ4268(LQ4268.java:36)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400529312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace400529312'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#invitee_new_group_name_0&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a3d0d07a1ae7008ccf1d7e45b3667e
+*** Element info: {Using=id, value=invitee_new_group_name_0}
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4268.test_LQ4268(LQ4268.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>84</td>
+<td>com.livingtree.tests.LQ4268@57250572</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_ScheduleFilePost.test_LQ4327ScheduleFilePost()'><b>test_LQ4327ScheduleFilePost</b><br>Test class: com.livingtree.tests.LQ4327_ScheduleFilePost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtEmail&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f26b5c468e6af002718d3f79a69da31b
+*** Element info: {Using=id, value=txtEmail}
+	at com.livingtree.tests.LQ4327_ScheduleFilePost.test_LQ4327ScheduleFilePost(LQ4327_ScheduleFilePost.java:47)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1145456332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1145456332'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtEmail&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58470}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f26b5c468e6af002718d3f79a69da31b
+*** Element info: {Using=id, value=txtEmail}
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4327_ScheduleFilePost.test_LQ4327ScheduleFilePost(LQ4327_ScheduleFilePost.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>417</td>
+<td>com.livingtree.tests.LQ4327_ScheduleFilePost@76ed1b7c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_ScheduleMessagePost.test_LQ4327ScheduleMessagePost()'><b>test_LQ4327ScheduleMessagePost</b><br>Test class: com.livingtree.tests.LQ4327_ScheduleMessagePost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 796cd5ee77bc5bf95175c8d0a6650b2d
+	at com.livingtree.tests.LQ4327_ScheduleMessagePost.test_LQ4327ScheduleMessagePost(LQ4327_ScheduleMessagePost.java:46)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1893488732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1893488732'><pre>java.lang.AssertionError: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 796cd5ee77bc5bf95175c8d0a6650b2d
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ4327_ScheduleMessagePost.test_LQ4327ScheduleMessagePost(LQ4327_ScheduleMessagePost.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>84</td>
+<td>com.livingtree.tests.LQ4327_ScheduleMessagePost@11fc564b</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5300.test_LQ5300()'><b>test_LQ5300</b><br>Test class: com.livingtree.tests.LQ5300<br>Test method: TC-Improved Inbox/Messaging | Need to be able to pull up a list of multiple recipients and send a group direct message<br>Parameters: {UserName=gill01.john01@mailinator.com, recipient1=teacher, ToBCC=teacher2, subject=TESTAUTOMATION, ToCC=teacher1, message=Test, Password=E@tM0r3CH1CK3n}</td>
+<td><div><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;row classes&apos;]/div[2]/a&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 311382069eb2aa1a9cd0aa9508c578a0
+*** Element info: {Using=xpath, value=//div[@class=&apos;row classes&apos;]/div[2]/a}
+	at com.livingtree.tests.LQ5300.test_LQ5300(LQ5300.java:32)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace506896447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace506896447'><pre>java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;row classes&apos;]/div[2]/a&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DLV9PP&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55381}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 311382069eb2aa1a9cd0aa9508c578a0
+*** Element info: {Using=xpath, value=//div[@class=&apos;row classes&apos;]/div[2]/a}
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.livingtree.tests.LQ5300.test_LQ5300(LQ5300.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+	at org.testng.TestRunner.run(TestRunner.java:497)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>233</td>
+<td>com.livingtree.tests.LQ5300@5552768b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.livingtree.tests.LQ1057.test_LQ1057()'><b>test_LQ1057</b><br>Test class: com.livingtree.tests.LQ1057<br>Test method: Verify the Sign up with Student<br>Parameters: {Email=demo, Address=Hitech City, Telephone=919014676533, FirstName=Chandu, ZipCode=500081, City=Hyderabad, Gender=Male, Date=6, ConfirmPassword=simple, Month=Nov, TimeZone=Asia/Kolkata, Year=1990, DOB=06-Nov-1990, State=Andhra Pradesh, Country=India, LastName=Reddy, Password=simple}</td>
+<td></td>
+<td>157</td>
+<td>com.livingtree.tests.LQ1057@762ef0ea</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ1117.test_LQ1117()'><b>test_LQ1117</b><br>Test class: com.livingtree.tests.LQ1117<br>Test method: Verify the Sign up with Parent<br>Parameters: {Child FirstName=Smith, Child Month=Nov, Email=deepak04@mailinator.com, Address=Hitech City, Telephone=919014676533, Child Gender=Male, Gender=Male, Month=Nov, Child Year=1999, DOB=06-Nov-1990, Family Name=Living, Password=E@tM0r3CH1CK3n, InviteEmail=Test, FirstName=Deepak, ZipCode=500081, InviteMessage=Test Message by Automation, City=Hyderabad, Date=6, ConfirmPassword=E@tM0r3CH1CK3n, TimeZone=Asia/Kolkata, Child LastName=Jhon, Year=1993, State=Andhra Pradesh, Child Date=9, Country=India, LastName=Das}</td>
+<td></td>
+<td>166</td>
+<td>com.livingtree.tests.LQ1117@31f9b85e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ1929.test_LQ1929()'><b>test_LQ1929</b><br>Test class: com.livingtree.tests.LQ1929<br>Test method: Students should not be able to message their class mates<br>Parameters: {Parentname=Dalya Gamil, Student=525630@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>58</td>
+<td>com.livingtree.tests.LQ1929@424e1977</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ1935.test_LQ1935()'><b>test_LQ1935</b><br>Test class: com.livingtree.tests.LQ1935<br>Test method: Co-admin of school should be able to message Students<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Co-adminName=Dana Bullard, studentMail=chapman.1034548@student.livingtree.com, Message=automation message to student from co admin, student=Todyana Chapman, Co-admin=dbullard@asdms.us, Subject=Automation, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>178</td>
+<td>com.livingtree.tests.LQ1935@10d68fcd</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2021.test_LQ2021()'><b>test_LQ2021</b><br>Test class: com.livingtree.tests.LQ2021<br>Test method: Comment on District Principals post which is made by District Admin<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment1=automation comment, Message=checking the comment of distric admin made by elementary principal, Distric_Admin=jclay@asdms.us, Principal=kfondren@asdms.us, Subject=LQ2021 file post, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>171</td>
+<td>com.livingtree.tests.LQ2021@117e949d</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2136.test_LQ2136()'><b>test_LQ2136</b><br>Test class: com.livingtree.tests.LQ2136<br>Test method: Comment on District Principals post which is made by District Admin<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=Aberdeen High School, Comment1=automation comment from distric admin, Message=LQ2136 checking post in , Distric_Admin=jclay@asdms.us, Principal=dbullard@asdms.us, Subject=LQ2136 file post, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>200</td>
+<td>com.livingtree.tests.LQ2136@5f8edcc5</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2142.test_LQ2142()'><b>test_LQ2142</b><br>Test class: com.livingtree.tests.LQ2142<br>Test method: Comment on District Teachers post which is made by District Admin<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=automation comment from distric admin, Message=LQ2142 checking post in , Teacher=katherine.thomashel@nn.k12.va.us, Distric_Admin=Lauren.Gray@nn.k12.va.us, Subject=LQ2142 file post, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>205</td>
+<td>com.livingtree.tests.LQ2142@7b02881e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2164.test_LQ2164()'><b>test_LQ2164</b><br>Test class: com.livingtree.tests.LQ2164<br>Test method: Verify the Edit option icons in Actions column<br>Parameters: {User=riyas@aithertechnology.com, schoolname=schoolofindia, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>103</td>
+<td>com.livingtree.tests.LQ2164@1ebd319f</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2165.test_LQ2165()'><b>test_LQ2165</b><br>Test class: com.livingtree.tests.LQ2165<br>Test method: change the password<br>Parameters: {NewPassword=test123, UserName=katherine.thomashel@nn.k12.va.us, OldPassword=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>109</td>
+<td>com.livingtree.tests.LQ2165@3c0be339</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2179.test_LQ2179()'><b>test_LQ2179</b><br>Test class: com.livingtree.tests.LQ2179<br>Test method: User should be able to register as Youth org Admin<br>Parameters: {user1=chinmoy.saha002_2@mailinator.com, user=chinmoy.saha002@mailinator.com, Password=E@tM0r3CH1CK3n}, public void com.livingtree.tests.LQ2179.test_LQ2179(java.util.HashMap,java.lang.reflect.Method)</td>
+<td></td>
+<td>140</td>
+<td>com.livingtree.tests.LQ2179@15ca7889</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2180.test_LQ2180()'><b>test_LQ2180</b><br>Test class: com.livingtree.tests.LQ2180<br>Test method: User should be able to register as Youth org Admin<br>Parameters: {excepted_error_message=Invalid phone number or country code., newphonenoinvalid=983077715, user=chinmoy.saha002@mailinator.com, newphonenovalid=9986416270, Password=E@tM0r3CH1CK3n}, public void com.livingtree.tests.LQ2180.test_LQ2180(java.util.HashMap,java.lang.reflect.Method)</td>
+<td></td>
+<td>93</td>
+<td>com.livingtree.tests.LQ2180@7a675056</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2192.test_LQ2192()'><b>test_LQ2192</b><br>Test class: com.livingtree.tests.LQ2192<br>Test method: User should be able to register as Youth org Admin<br>Parameters: {Child FirstName=Smith, Child Month=Nov, Email=chinmoy@mailinator.com, Address=Hitech City, Telephone=919014676533, Child Gender=Male, Gender=Male, Month=Nov, Child Year=1999, DOB=06-Nov-1990, Family Name=Living, Password=simple, InviteEmail=Test, FirstName=chinmoy, ZipCode=500081, InviteMessage=Test Message by Automation, City=Hyderabad, Date=19, ConfirmPassword=simple, TimeZone=Asia/Kolkata, Child LastName=Jhon, Year=1984, Group Name=Group, State=Andhra Pradesh, Child Date=9, Country=India, LastName=saha}, public void com.livingtree.tests.LQ2192.test_LQ2192(java.util.HashMap,java.lang.reflect.Method)</td>
+<td></td>
+<td>173</td>
+<td>com.livingtree.tests.LQ2192@d21a74c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2202.test_LQ2202()'><b>test_LQ2202</b><br>Test class: com.livingtree.tests.LQ2202<br>Test method: Verify the Sign up with Coach<br>Parameters: {Child FirstName=Smith, Child Month=Nov, Email=chinmoy@mailinator.com, Address=Hitech City, Telephone=919014676533, Child Gender=Male, Gender=Male, Month=Nov, Child Year=1999, DOB=06-Nov-1990, Family Name=Living, Password=simple, InviteEmail=Test, FirstName=Chinmoy, ZipCode=500081, InviteMessage=Test Message by Automation, City=Hyderabad, Date=6, ConfirmPassword=simple, TimeZone=Asia/Kolkata, Child LastName=Jhon, Year=1990, Group Name=Group, State=Andhra Pradesh, Child Date=9, Country=India, LastName=saha}, public void com.livingtree.tests.LQ2202.test_LQ2202(java.util.HashMap,java.lang.reflect.Method)</td>
+<td></td>
+<td>167</td>
+<td>com.livingtree.tests.LQ2202@6e509ffa</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2752.test_LQ2572()'><b>test_LQ2572</b><br>Test class: com.livingtree.tests.LQ2752<br>Test method: Updation of single event by turning Allert all ON to OFF<br>Parameters: {Descrpt=reminder event check, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ2752 reminder event edit, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>191</td>
+<td>com.livingtree.tests.LQ2752@2638011</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2742.test_LQ2742()'><b>test_LQ2742</b><br>Test class: com.livingtree.tests.LQ2742<br>Test method: Updation of single event by turning RSVP ON to OFF<br>Parameters: {Descrpt=all option event check, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ2744 all option event edit, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>190</td>
+<td>com.livingtree.tests.LQ2742@2898ac89</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2748.test_LQ2748()'><b>test_LQ2748</b><br>Test class: com.livingtree.tests.LQ2748<br>Test method: Updation of single event by turning Allert all ON to OFF<br>Parameters: {Descrpt=comment event check, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ2748 comment event edit, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>192</td>
+<td>com.livingtree.tests.LQ2748@683dbc2c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ2749.test_LQ2749()'><b>test_LQ2749</b><br>Test class: com.livingtree.tests.LQ2749<br>Test method: Updation of single event by turning Allert all ON to OFF<br>Parameters: {Descrpt=all day  event check, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ2749 all day event edit, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>188</td>
+<td>com.livingtree.tests.LQ2749@68267da0</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ3130.test_LQ3130()'><b>test_LQ3130</b><br>Test class: com.livingtree.tests.LQ3130<br>Test method: Verify the Photo download option is available for admins of Org/Class/League/Adult group<br>Parameters: {GroupName=PK Homeroom, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=Photo post, Teacher=katherine.thomashel@nn.k12.va.us, CoAdmin=Lauren.Gray@nn.k12.va.us, Subject=LQ3130 photo post, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>239</td>
+<td>com.livingtree.tests.LQ3130@6ff29830</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ3299.test_LQ3299()'><b>test_LQ3299</b><br>Test class: com.livingtree.tests.LQ3299<br>Test method: Verify the Edit option icons in Actions column<br>Parameters: {User=riyas@aithertechnology.com, schoolname=schoolofindia, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>58</td>
+<td>com.livingtree.tests.LQ3299@6a2b953e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ3665.test_LQ3665()'><b>test_LQ3665</b><br>Test class: com.livingtree.tests.LQ3665<br>Test method: Verify recipeants in the To field if click on reply button<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=studentliveschool@mailinator.com, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=message test by Automation, Teacher=William3.Blake3@mailinator.com, StudentTwoName=Zhendaya Beckwith, PrincipalName=William3 Blake3, Subject=Automation, CountFES2=29.0, CountFES1=14.0, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, StudentOneName=stuliveschool sliveschool, Principal=William3.Blake3@mailinator.com, TeacherName=William3 Blake3, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>146</td>
+<td>com.livingtree.tests.LQ3665@313b2ea6</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ3667.test_LQ3667()'><b>test_LQ3667</b><br>Test class: com.livingtree.tests.LQ3667<br>Test method: Verify recipeants in the To field if click on forward button<br>Parameters: {GroupName=8_ALL, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=studentliveschool@mailinator.com, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=message test by Automation, Teacher=William3.Blake3@mailinator.com, StudentTwoName=Zhendaya Beckwith, PrincipalName=Lauren Gray, Subject=Automation, CountFES2=29.0, CountFES1=14.0, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, StudentOneName=stuliveschool sliveschool, Principal=William3.Blake3@mailinator.com, TeacherName=William3 Blake3, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>252</td>
+<td>com.livingtree.tests.LQ3667@2f465398</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4084.test_LQ4084()'><b>test_LQ4084</b><br>Test class: com.livingtree.tests.LQ4084<br>Test method: check all option in parent account after publish the event<br>Parameters: {Descrpt=test, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ4084 calender  test, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>154</td>
+<td>com.livingtree.tests.LQ4084@548e6d58</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4141.test_LQ4141()'><b>test_LQ4141</b><br>Test class: com.livingtree.tests.LQ4141<br>Test method: Verify that the lion icon is removed from the auto-translated email notification for the created post<br>Parameters: {UserName=jclay@asdms.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>63</td>
+<td>com.livingtree.tests.LQ4141@a1cdc6d</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4190.test_LQ4190()'><b>test_LQ4190</b><br>Test class: com.livingtree.tests.LQ4190<br>Test method: Verify the welcome video post content for new users<br>Parameters: {UserName=qalivingtree.001@gmail.com, text=LivingTree Welcome, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>98</td>
+<td>com.livingtree.tests.LQ4190@175b9425</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4195.test_LQ4195()'><b>test_LQ4195</b><br>Test class: com.livingtree.tests.LQ4195<br>Test method: Verify that add parent and add student and check the post on the same group<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment1=Comment1 test by automation, Comment2=Comment2 test by automation, UserName=tleach@asdms.us, Message=LQ-4196 test by Automation, InviteeName=abstam.alammari.4345@parent.livingtree.com, env=maple_auto, groupname=Functional Academics, Subject=LA-11876 LQ-4196, Subject_Gmail=Deekap PK Homeroom has invited you to join, childname=Shatha Alzabidi, Password=E@tM0r3CH1CK3n, parents=Abstam Alammari (Shatha Alzabidi)}</td>
+<td></td>
+<td>130</td>
+<td>com.livingtree.tests.LQ4195@610f7aa</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4321.test_LQ4321()'><b>test_LQ4321</b><br>Test class: com.livingtree.tests.LQ4321<br>Test method: Verify Email Address field after log out when 'Remember me' checkbox is checked<br>Parameters: {UserName=schooldemo@livingtree.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>37</td>
+<td>com.livingtree.tests.LQ4321@5609159b</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_FilePost.test_LQ4327FilePost()'><b>test_LQ4327FilePost</b><br>Test class: com.livingtree.tests.LQ4327_FilePost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>267</td>
+<td>com.livingtree.tests.LQ4327_FilePost@2118cddf</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_MessagePost.test_LQ4327MessagePost()'><b>test_LQ4327MessagePost</b><br>Test class: com.livingtree.tests.LQ4327_MessagePost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>227</td>
+<td>com.livingtree.tests.LQ4327_MessagePost@17a7f733</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_PhotoPost.test_LQ4327PhotoPost()'><b>test_LQ4327PhotoPost</b><br>Test class: com.livingtree.tests.LQ4327_PhotoPost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>231</td>
+<td>com.livingtree.tests.LQ4327_PhotoPost@68567e20</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_SchedulePhotoPost.test_LQ4327SchedulePhotoPost()'><b>test_LQ4327SchedulePhotoPost</b><br>Test class: com.livingtree.tests.LQ4327_SchedulePhotoPost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>385</td>
+<td>com.livingtree.tests.LQ4327_SchedulePhotoPost@394a2528</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_ScheduleVideoPost.test_LQ4327ScheduleVideoPost()'><b>test_LQ4327ScheduleVideoPost</b><br>Test class: com.livingtree.tests.LQ4327_ScheduleVideoPost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>488</td>
+<td>com.livingtree.tests.LQ4327_ScheduleVideoPost@6236eb5f</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4327_VideoPost.test_LQ4327VideoPost()'><b>test_LQ4327VideoPost</b><br>Test class: com.livingtree.tests.LQ4327_VideoPost<br>Test method: Verify 'Engagement coefficient' (post score) for a post<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>341</td>
+<td>com.livingtree.tests.LQ4327_VideoPost@7c1e2a9e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_FilePost.test_LQ4328FilePost()'><b>test_LQ4328FilePost</b><br>Test class: com.livingtree.tests.LQ4328_FilePost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>501</td>
+<td>com.livingtree.tests.LQ4328_FilePost@fa36558</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_MessagePost.test_LQ4328MessagePost()'><b>test_LQ4328MessagePost</b><br>Test class: com.livingtree.tests.LQ4328_MessagePost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>426</td>
+<td>com.livingtree.tests.LQ4328_MessagePost@672872e1</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_PhotoPost.test_LQ4328PhotoPost()'><b>test_LQ4328PhotoPost</b><br>Test class: com.livingtree.tests.LQ4328_PhotoPost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>404</td>
+<td>com.livingtree.tests.LQ4328_PhotoPost@32910148</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_ScheduleFilePost.test_LQ4328ScheduleFilePost()'><b>test_LQ4328ScheduleFilePost</b><br>Test class: com.livingtree.tests.LQ4328_ScheduleFilePost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>739</td>
+<td>com.livingtree.tests.LQ4328_ScheduleFilePost@3f56875e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_ScheduleMessagePost.test_LQ4328ScheduleMessagePost()'><b>test_LQ4328ScheduleMessagePost</b><br>Test class: com.livingtree.tests.LQ4328_ScheduleMessagePost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>737</td>
+<td>com.livingtree.tests.LQ4328_ScheduleMessagePost@2b4bac49</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_SchedulePhotoPost.test_LQ4328SchedulePhotoPost()'><b>test_LQ4328SchedulePhotoPost</b><br>Test class: com.livingtree.tests.LQ4328_SchedulePhotoPost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>691</td>
+<td>com.livingtree.tests.LQ4328_SchedulePhotoPost@fd07cbb</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_ScheduleVideoPost.test_LQ4328ScheduleVideoPost()'><b>test_LQ4328ScheduleVideoPost</b><br>Test class: com.livingtree.tests.LQ4328_ScheduleVideoPost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>802</td>
+<td>com.livingtree.tests.LQ4328_ScheduleVideoPost@3571b748</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4328_VideoPost.test_LQ4328VideoPost()'><b>test_LQ4328VideoPost</b><br>Test class: com.livingtree.tests.LQ4328_VideoPost<br>Test method: Verify Overall Teacher Engagement Score<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=Lauren.Gray@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>664</td>
+<td>com.livingtree.tests.LQ4328_VideoPost@3e96bacf</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_FilePost.test_LQ4329FilePost()'><b>test_LQ4329FilePost</b><br>Test class: com.livingtree.tests.LQ4329_FilePost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>325</td>
+<td>com.livingtree.tests.LQ4329_FilePost@484970b0</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_MessagePost.test_LQ4329MessagePost()'><b>test_LQ4329MessagePost</b><br>Test class: com.livingtree.tests.LQ4329_MessagePost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>173</td>
+<td>com.livingtree.tests.LQ4329_MessagePost@4470f8a6</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_PhotoPost.test_LQ4329PhotoPost()'><b>test_LQ4329PhotoPost</b><br>Test class: com.livingtree.tests.LQ4329_PhotoPost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>289</td>
+<td>com.livingtree.tests.LQ4329_PhotoPost@7c83dc97</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_ScheduleFilePost.test_LQ4329ScheduleFilePost()'><b>test_LQ4329ScheduleFilePost</b><br>Test class: com.livingtree.tests.LQ4329_ScheduleFilePost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>353</td>
+<td>com.livingtree.tests.LQ4329_ScheduleFilePost@7748410a</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_ScheduleMessagePost.test_LQ4329ScheduleMessagePost()'><b>test_LQ4329ScheduleMessagePost</b><br>Test class: com.livingtree.tests.LQ4329_ScheduleMessagePost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>346</td>
+<td>com.livingtree.tests.LQ4329_ScheduleMessagePost@740773a3</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_SchedulePhotoPost.test_LQ4329SchedulePhotoPost()'><b>test_LQ4329SchedulePhotoPost</b><br>Test class: com.livingtree.tests.LQ4329_SchedulePhotoPost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>349</td>
+<td>com.livingtree.tests.LQ4329_SchedulePhotoPost@37f1104d</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_ScheduleVideoPost.test_LQ4329ScheduleVideoPost()'><b>test_LQ4329ScheduleVideoPost</b><br>Test class: com.livingtree.tests.LQ4329_ScheduleVideoPost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>545</td>
+<td>com.livingtree.tests.LQ4329_ScheduleVideoPost@55740540</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4329_VideoPost.test_LQ4329VideoPost()'><b>test_LQ4329VideoPost</b><br>Test class: com.livingtree.tests.LQ4329_VideoPost<br>Test method: Verify the visibility of Engagement coefficient for a post (post score) in Conversations screen<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=jpatt0554@gmail.com, SoneSParent=jpatt0554@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>392</td>
+<td>com.livingtree.tests.LQ4329_VideoPost@60015ef5</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4340.test_LQ4340()'><b>test_LQ4340</b><br>Test class: com.livingtree.tests.LQ4340<br>Test method: Verify sent messages in Sent Messages tab<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=studentliveschool@mailinator.com, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=message test by Automation, Teacher=William3.Blake3@mailinator.com, StudentTwoName=Zhendaya Beckwith, PrincipalName=ashwini7 kallimath7, Subject=Automation, CountFES2=29.0, CountFES1=14.0, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, StudentOneName=stuliveschool sliveschool, Principal=ashwini7.kallimath7@mailinator.com, TeacherName=William3 Blake3, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>151</td>
+<td>com.livingtree.tests.LQ4340@2f54a33d</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4343.test_LQ4343()'><b>test_LQ4343</b><br>Test class: com.livingtree.tests.LQ4343<br>Test method: Verify the link in email notifications to mute a post<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=james.bear.4074259548@parent.livingtree.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=Test automation Message, Teacher=katherine.thomashel@nn.k12.va.us, Subject=Subject test automation, CountFES2=29, StwoSParent=charles.block.1532393233@parent.livingtree.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=heidimariebear@gmail.com, SoneSParent=james.bear.4074259548@parent.livingtree.com, Principal=principalAS@mailinator.com, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>113</td>
+<td>com.livingtree.tests.LQ4343@1018bde2</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4446.test_LQ4446()'><b>test_LQ4446</b><br>Test class: com.livingtree.tests.LQ4446<br>Test method: Inbox message checking Parent =>Teacher<br>Parameters: {GroupName=PK Homeroom, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, William3.Blake3@mailinator.com=William3.Blake3@mailinator.com, Message=message test by Automation, Parent=parentliveschool@mailinator.com, ParentName=chinmoy saha, Subject=Automation, TeacherName=William3 Blake3, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>174</td>
+<td>com.livingtree.tests.LQ4446@65b3f4a4</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4450.test_LQ4450()'><b>test_LQ4450</b><br>Test class: com.livingtree.tests.LQ4450<br>Test method: Selected group disappears when uploading photo<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, SonePParent=arnesia.s.carter@gmail.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>195</td>
+<td>com.livingtree.tests.LQ4450@f2ff811</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4525.test_LQ4525()'><b>test_LQ4525</b><br>Test class: com.livingtree.tests.LQ4525<br>Test method: Emergencey Alert<br>Parameters: {Distric_admin=principalphalert@mailinator.com, message=Emergency alert send to every one by admin -QA Team, Username=chinmoy.saha001@mailinator.com, Subject=LQ-4525 test by Automation, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>141</td>
+<td>com.livingtree.tests.LQ4525@568ff82</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4539.test_LQ4539()'><b>test_LQ4539</b><br>Test class: com.livingtree.tests.LQ4539<br>Test method: ADD To Layer<br>Parameters: {new_user_value_y=Y, UserName=Alisha Johnson, filepath=\src\test\resources\Files\Uploads\File\LA-12984.csv, Distric_admin=jclay@asdms.us, button_name_value_teacher=Invite Classroom Teacher, SchoolName=Aberdeen High School, button_name_value_other=Add Others, env=mapleauto, Username_email=johnson.1233637@student.livingtree.com, Password=E@tM0r3CH1CK3n, new_user_value_n=N}</td>
+<td></td>
+<td>161</td>
+<td>com.livingtree.tests.LQ4539@50caa560</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4668.test_LQ4668()'><b>test_LQ4668</b><br>Test class: com.livingtree.tests.LQ4668<br>Test method: User is not receiving the phone alert after removing the schedule option for a Phone alert in case of "Scheduled Phone Alert"<br>Parameters: {GroupName=5_ALL, Comment1=comment by automation, Message=LQ-4668 phone alert by automation from maple by qa team, Parent=chinmoy.saha001@mailinator.com, Principal=principalphalert@mailinator.com, Subject=LA-13118 phone alert, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>371</td>
+<td>com.livingtree.tests.LQ4668@2a266d09</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4673.test_LQ4673()'><b>test_LQ4673</b><br>Test class: com.livingtree.tests.LQ4673<br>Test method: Web:While creating a new layer in district/school, add a layer functionality option not available.<br>Parameters: {new_user_value_y=Y, UserName=Alisha Johnson, filepath=\src\test\resources\Files\Uploads\File\LA-12984.csv, Distric_admin=jclay@asdms.us, button_name_value_teacher=Invite Classroom Teacher, SchoolName=Aberdeen High School, button_name_value_other=Add Others, env=mapleauto, Username_email=johnson.1233637@student.livingtree.com, Password=E@tM0r3CH1CK3n, new_user_value_n=N}</td>
+<td></td>
+<td>173</td>
+<td>com.livingtree.tests.LQ4673@5ab9e72c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4726.test_LQ4726()'><b>test_LQ4726</b><br>Test class: com.livingtree.tests.LQ4726<br>Test method: Edlio Engage User: Problem uploading profile photo<br>Parameters: {Descrpt=test, ParentName1=trowarianar@gmail.com, location=Bangalore, eventType=LQ4084 calender  test, TeacherName=katherine.thomashel@nn.k12.va.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>138</td>
+<td>com.livingtree.tests.LQ4726@186f8716</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4727.test_LQ4727()'><b>test_LQ4727</b><br>Test class: com.livingtree.tests.LQ4727<br>Test method: Non-admin user should not be allowed to create a scheduled post<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, GroupName=PK Homeroom, Comment1=Comment test by automation, StwoPParent=arnesia.s.carter@gmail.com, Comment2=Comment2 test by automation, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, StudentOne=525630@nnschools.org, Message=LQ-4328 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4328, CountFES2=29, StwoSParent=arnesia.s.carter@gmail.com, CountFES1=14, ParentCountFES2=40, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, TeacherFESScore=33, StudentTwo=526032@nnschools.org, SonePParent=trowarianar@gmail.com, SoneSParent=trowarianar@gmail.com, Principal=katherine.thomashel@nn.k12.va.us, TeacherName=Katherine Thomas Hellmuth, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>272</td>
+<td>com.livingtree.tests.LQ4727@1d8bd0de</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4736.test_LQ4736()'><b>test_LQ4736</b><br>Test class: com.livingtree.tests.LQ4736<br>Test method: Edlio Engage User: Problem uploading profile photo<br>Parameters: {PhotoPath=\src\test\resources\Files\Uploads\Images\Android.jpg, email=crystal.voth@k12.nd.us, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>82</td>
+<td>com.livingtree.tests.LQ4736@45ca843</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4737.test_LQ4737()'><b>test_LQ4737</b><br>Test class: com.livingtree.tests.LQ4737<br>Test method: TC-Mirrored Groups: UI to split a group<br>Parameters: {groupowner_phone=3.309474892E9, groupowner_first_name=chinmoy, User_name=parent1james@mailinator.com, group_owner_mail_id=chinmoy.saha100@mailinator.com, family_name=p1james Family, Password=E@tM0r3CH1CK3n, groupowner_last_name=saha}</td>
+<td></td>
+<td>60</td>
+<td>com.livingtree.tests.LQ4737@11c9af63</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4819.test_LQ4819()'><b>test_LQ4819</b><br>Test class: com.livingtree.tests.LQ4819<br>Test method: Reschedule option for a schedule post during edit of a schedule post, the post still displayed as scheduled.<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>481</td>
+<td>com.livingtree.tests.LQ4819@757acd7b</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4820.test_LQ4820()'><b>test_LQ4820</b><br>Test class: com.livingtree.tests.LQ4820<br>Test method: Web: On de-selecting schedule option for a schedule post during edit of a schedule post, the post still displayed as scheduled<br>Parameters: {GroupName=PK Homeroom, Comment1=Comment test by automation, FilePath=\src\test\resources\Files\Uploads\File\DistrictsToDelete.xlsx, Comment2=Comment2 test by automation, StudentOne=525630@nnschools.org, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-4327 test by Automation, Teacher=katherine.thomashel@nn.k12.va.us, Subject=LA-11993 LQ-4327, CountFES2=14, CountFES1=7, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, StudentTwo=526032@nnschools.org, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>596</td>
+<td>com.livingtree.tests.LQ4820@36b4fe2a</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ4920.test_LQ4920()'><b>test_LQ4920</b><br>Test class: com.livingtree.tests.LQ4920<br>Test method: LA-13741 TC Web: User is able to post an inappropriate comment on an individual photo in case multiple photos post<br>Parameters: {GroupName=PK Homeroom, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=Photo post, Parent=arnesia.s.carter@gmail.com, comment1=shit, Teacher=katherine.thomashel@nn.k12.va.us, error=Inappropriate content was detected.  Please check and try again. , Subject=LQ3130 photo post, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>231</td>
+<td>com.livingtree.tests.LQ4920@574b560f</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5068.test_LQ5068()'><b>test_LQ5068</b><br>Test class: com.livingtree.tests.LQ5068<br>Test method: Group types in the Group Filter section and filter posts by that group<br>Parameters: {UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>40</td>
+<td>com.livingtree.tests.LQ5068@ba54932</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5173.test_LQ5173()'><b>test_LQ5173</b><br>Test class: com.livingtree.tests.LQ5173<br>Test method: TC-Improved Posting | As a parent, I should not be able to post to classes<br>Parameters: {GroupName=10_ALL, Comment=Nice, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5173 test by Automation, UserName1=parent1james@mailinator.com, Subject=LQ-5173 test by Automation, Password=E@tM0r3CH1CK3n, Name=Parent JamesOne}</td>
+<td></td>
+<td>357</td>
+<td>com.livingtree.tests.LQ5173@28975c28</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5174.test_LQ5174()'><b>test_LQ5174</b><br>Test class: com.livingtree.tests.LQ5174<br>Test method: TC-PHP-7.4: Issue with likes notifying user for photo show.<br>Parameters: {GroupName=10_ALL, Comment=Nice, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5174 test by Automation, UserName1=parent2james@mailinator.com, Subject=LQ-5174 test by Automation, Password=E@tM0r3CH1CK3n, Name=pp2james p2james}</td>
+<td></td>
+<td>158</td>
+<td>com.livingtree.tests.LQ5174@3943a2be</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5188.test_LQ5188()'><b>test_LQ5188</b><br>Test class: com.livingtree.tests.LQ5188<br>Test method: when I click on another user's name link within a post, I should be routed to the inbox to compose a direct message<br>Parameters: {GroupName=10_ALL, Comment=Nice, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5174 test by Automation, UserName1=parent1james@mailinator.com, Subject=LQ-5174 test by Automation, Password=E@tM0r3CH1CK3n, Name=Parent JamesOne}</td>
+<td></td>
+<td>116</td>
+<td>com.livingtree.tests.LQ5188@343570b7</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5190.test_LQ5190()'><b>test_LQ5190</b><br>Test class: com.livingtree.tests.LQ5190<br>Test method: Improved Inbox/Messaging | I need to be able to search for inbox messages.<br>Parameters: {FilePath=\src\test\resources\Files\Uploads\Images\Car.jpg, Username1=teacher2james@mailinator.com, UserName=gill01.john01@mailinator.com, Message=Test Automation LM913, SearchName=gill01 john01, Recipient1=teacher1, Recipient2=teacher2, Subject=Test LM913, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>118</td>
+<td>com.livingtree.tests.LQ5190@157853da</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5217.test_LQ5217()'><b>test_LQ5217</b><br>Test class: com.livingtree.tests.LQ5217<br>Test method: Change "Pinned" posts to "Saved" posts<br>Parameters: {GroupName=10_ALL, Comment=Nice, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5217 test by Automation, Parent=parent james, UserName1=parent1james@mailinator.com, Subject=LQ-5217 test by Automation, Password=E@tM0r3CH1CK3n, Name=Parent JamesOne}</td>
+<td></td>
+<td>108</td>
+<td>com.livingtree.tests.LQ5217@71c3b41</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5218.test_LQ5218()'><b>test_LQ5218</b><br>Test class: com.livingtree.tests.LQ5218<br>Test method: TC-Improved Inbox/Messaging | Rearrange inbox options for consistency with mobile UI<br>Parameters: {UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>41</td>
+<td>com.livingtree.tests.LQ5218@236e3f4e</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5219.test_LQ5219()'><b>test_LQ5219</b><br>Test class: com.livingtree.tests.LQ5219<br>Test method: TC-Improved Inbox/Messaging | When sending a direct inbox message, I need to know which students are associated with parents in the "To" and new "BCC" field<br>Parameters: {GroupName=10_ALL, Comment=Nice, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5219 test by Automation, Parent=parent james, UserName1=parent1james@mailinator.com, Subject=LQ-5219 test by Automation, Password=E@tM0r3CH1CK3n, Name=Parent JamesOne}</td>
+<td></td>
+<td>49</td>
+<td>com.livingtree.tests.LQ5219@3cc1435c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5220.test_LQ5220()'><b>test_LQ5220</b><br>Test class: com.livingtree.tests.LQ5220<br>Test method:  TC-UI/UX | Rewording and retitling to the term \"Posts\" on the main page for consistency and clarity<br>Parameters: {UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>45</td>
+<td>com.livingtree.tests.LQ5220@6bf0219d</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5230.test_LQ5230()'><b>test_LQ5230</b><br>Test class: com.livingtree.tests.LQ5230<br>Test method: TC-UI/UX | As a user, when clicking another user's profile image, I should routed to his or her profile<br>Parameters: {GroupName=jamesschool, =, Comment=Comment test LQ5230, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5230 test by Automation, Teacher=teacher1james@mailinator.com, Student=student1james@mailinator.com, Subject=LQ-5230 test by Automation, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>200</td>
+<td>com.livingtree.tests.LQ5230@dd0c991</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5243.test_LQ5243()'><b>test_LQ5243</b><br>Test class: com.livingtree.tests.LQ5243<br>Test method: UI/UX | Change "My Profile" to "Settings"<br>Parameters: {UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>40</td>
+<td>com.livingtree.tests.LQ5243@5f16132a</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5246.test_LQ5246()'><b>test_LQ5246</b><br>Test class: com.livingtree.tests.LQ5246<br>Test method: When clicking post notifications where a post has been deleted, nothing happens<br>Parameters: {GroupName=jamesschool, =, Comment=Test LQ5246 comment, UserName=gill01.john01@mailinator.com, PhotoPath=\src\test\resources\Files\Uploads\Images\Car.jpg, Message=LQ-5246 test by Automation, Student=student3james@mailinator.com, Subject=LQ-5246 test by Automation, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>141</td>
+<td>com.livingtree.tests.LQ5246@69fb6037</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5248.test_LQ5248()'><b>test_LQ5248</b><br>Test class: com.livingtree.tests.LQ5248<br>Test method: UI/UX | Improve join group/class by 'Group Code'<br>Parameters: {UserName=gill01.john01@mailinator.com, Search=Teacher, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>63</td>
+<td>com.livingtree.tests.LQ5248@36d585c</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5257.test_LQ5257()'><b>test_LQ5257</b><br>Test class: com.livingtree.tests.LQ5257<br>Test method: Tc As a Solo User, I need to be able to create/manage groups<br>Parameters: {groupName=Bangtan School, UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>91</td>
+<td>com.livingtree.tests.LQ5257@87a85e1</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5275.test_LQ5275()'><b>test_LQ5275</b><br>Test class: com.livingtree.tests.LQ5275<br>Test method: TC-Web : While sharing the video post "Type Message" box along with content is displayed in Create Post screen.<br>Parameters: {GroupName=jamesschool, =, Comment=Comment test LQ5230, UserName=gill01.john01@mailinator.com, VideoPath=\src\test\resources\Files\Uploads\Videos\video.mp4, Message=LQ-5275 test by Automation, Teacher=teacher2james@mailinator.com, Student=student1james@mailinator.com, Subject=LQ-5275 test by Automation, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>191</td>
+<td>com.livingtree.tests.LQ5275@671a5887</td></tr>
+<tr>
+<td title='com.livingtree.tests.LQ5307.test_LQ5307()'><b>test_LQ5307</b><br>Test class: com.livingtree.tests.LQ5307<br>Test method: UI/UX | Within My Network, I need to be able to search for other users and see their profile<br>Parameters: {name=parent, UserName=gill01.john01@mailinator.com, Password=E@tM0r3CH1CK3n}</td>
+<td></td>
+<td>47</td>
+<td>com.livingtree.tests.LQ5307@3c947bc5</td></tr>
+</table><p>
+</body>
+</html>
